@@ -1,11 +1,11 @@
-# VoltaMetric.NET (Project Blueprint)
+# VoltaMetric (Project Blueprint)
 
 ![Status](https://img.shields.io/badge/Status-In%20Development-orange)
 [![.NET nanoFramework](https://img.shields.io/badge/.NET-nanoFramework-blue.svg)](https://www.nanoframework.net/)
 [![Language](https://img.shields.io/badge/Language-C%23-green.svg)](https://docs.microsoft.com/en-us/dotnet/csharp/)
 [![Hardware](https://img.shields.io/badge/Hardware-RP2040-red.svg)](https://www.seeedstudio.com/XIAO-RP2040-v1-0-p-4932.html)
 
-**VoltaMetric.NET** is an embedded engineering initiative to build a dual-channel, high-precision power analyser using the **.NET nanoFramework**.
+**VoltaMetric** is an embedded engineering initiative to build a dual-channel, high-precision power analyser using the **.NET nanoFramework**.
 
 This project aims to bridge the gap between industrial sensing protocols (Modbus RTU) and modern Object-Oriented C# firmware. The device is designed to safely monitor Mains AC (240V) and High-Voltage DC (300V) simultaneously, logging telemetry to an onboard secure storage system.
 
@@ -47,20 +47,20 @@ graph TD
     G -->|I2C| H[OLED Dashboard]
     G -->|SPI| I[SD Persistence Layer]
 ```
-⚠️ Safety Warning
-DANGER: High Voltage Project
+## ⚠️ Safety Warning
+### DANGER: High Voltage Project
 
-This device interfaces directly with Mains Voltage (110V/240V AC) and High Voltage DC (>60V).
+This device interfaces directly with Mains Voltage (**110V**/**240V** AC) and High Voltage DC (>**60V**).
 
-Risk of Electrocution: Never touch the sensor modules or PCB while mains power is connected.
+* **Risk of Electrocution**: Never touch the sensor modules or PCB while mains power is connected.
 
-Enclosure: The device must be mounted inside a non-conductive ABS plastic enclosure before use.
+* **Enclosure**: The device must be mounted inside a non-conductive ABS plastic enclosure before use.
 
-Isolation: Ensure the Logic Level Shifter is correctly installed to maintain optical isolation between the High Voltage side and the USB/Logic side.
+* **Isolation**: Ensure the Logic Level Shifter is correctly installed to maintain optical isolation between the High Voltage side and the USB/Logic side.
 
 The author assumes no liability for injuries or damage caused by the assembly or use of this device.
 
-📄 License
-This project is licensed under the MIT License - see the LICENSE file for details.
+## 📄 License
+This project is licensed under the **MIT License** - see the **LICENSE** file for details.
 
-Built with ❤️ and C# by Arjun
+Built with ❤️ and **C#** by **Arjun**
