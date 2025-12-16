@@ -1,0 +1,6 @@
+(sym_lib_table
+  (version 7)
+  (lib (name "OPL")(type "KiCad")(uri "${KIPRJMOD}/ExternalLib/OPL_Kicad_Library/Seeed Studio XIAO Series Library/Seeed_Studio_XIAO_Series.kicad_sym")(options "")(descr ""))
+  (lib (name "BOB-12009")(type "KiCad")(uri "${KIPRJMOD}/ExternalLib/BOB/BOB-12009.kicad_sym")(options "")(descr ""))
+  (lib (name "MicroSD")(type "KiCad")(uri "${KIPRJMOD}/ExternalLib/SDCard/MICROSD_SPI_OR_SDIO_CARD.kicad_sym")(options "")(descr ""))
+)
