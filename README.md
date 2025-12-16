@@ -7,20 +7,20 @@
 
 **VoltaMetric** is an embedded engineering initiative to build a dual-channel, high-precision power analyser using the **.NET nanoFramework**.
 
-This project aims to bridge the gap between industrial sensing protocols (Modbus RTU) and modern Object-Oriented C# firmware. The device is designed to safely monitor Mains AC (240V) and High-Voltage DC (300V) simultaneously, logging telemetry to an onboard secure storage system.
+This project aims to combine C# firmware and measurements of AC and DV simultaneously, logging telemetry to an onboard secure storage system.
 
 ---
 
-## 🎯 Project Goals
+## Project Goals
 
 1.  **Dual-Rail Physics:** Implement simultaneous sampling of AC Mains (via CT Coil) and DC High Voltage (via Shunt).
 2.  **Protocol Bridging:** Create a C# implementation of the **Modbus RTU** protocol over RS485 to interface with industrial sensors.
 3.  **Safety Isolation:** Design a hardware layer that optically isolates the microcontroller logic (3.3V) from the measurement rails (240V/300V).
-4.  **Autonomous Logging:** Implement a file management system to persist time-series energy data to SD Card storage in NDJSON format.
+4.  **Autonomous Logging:** Implement a file management system to persist time-series energy data to SD Card storage in JSON format.
 
 ---
 
-## 🏗 Planned Architecture
+## Planned Architecture
 
 ### Hardware Stack
 The system is built around the **Seeed Studio XIAO RP2040**, chosen for its dual-core Cortex M0+ processor and native support for .NET.
@@ -47,7 +47,7 @@ graph TD
     G -->|I2C| H[OLED Dashboard]
     G -->|SPI| I[SD Persistence Layer]
 ```
-## ⚠️ Safety Warning
+## Safety Warning
 ### DANGER: High Voltage Project
 
 This device interfaces directly with Mains Voltage (**110V**/**240V** AC) and High Voltage DC (>**60V**).
@@ -60,7 +60,7 @@ This device interfaces directly with Mains Voltage (**110V**/**240V** AC) and Hi
 
 The author assumes no liability for injuries or damage caused by the assembly or use of this device.
 
-## 📄 License
+## License
 This project is licensed under the **MIT License** - see the **LICENSE** file for details.
 
 Built with ❤️ and **C#** by **Arjun**
